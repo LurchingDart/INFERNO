@@ -3,8 +3,8 @@ import { Image } from "astro:assets";
 import catImage from "~/assets/cat.png";
 import BackgroundImage from "~/components/background-image.astro";
 
-const widths = [256, 256];
-const sizes = "(min-width: 640px) 42vw, 67vw";
+const widths = [1024, 1024];
+const sizes = "(min-width: 250px) 256px";
 ---
 
 <section class="relative h-full">
@@ -12,21 +12,23 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     <BackgroundImage />
   </div>
   <div class="relative flex flex-col h-full place-items-center p-6">
-    <h2 class="border-4 border-red-500 bg-gradient-to-b from-amber-900 to-black bg-clip-text text-transparent text-center font-extrabold tracking-tighter text-6xl md:text-8xl">
-      INFERNO
-    </h2>
+        <h1 class="">
+            INFERNO
+        </h1>
+        <h2>
+            HALLOWEEN
+        </h2>
     <Image
-        class="sm:w-3/4 border-green-500 border-2"
+        class="w-2/3 md:w-1/5 border-green-500 border-2"
         src={catImage}
         widths={widths}
-        sizes={sizes}
         loading="eager"
-        alt="A floating astronaut in a space suit"
+        alt="A demon cat"
     />
     <div class="text-center border-2 border-amber-800">
-        <h1>
+        <h2>
             COSTUME PARTY
-        </h1>
+        </h2>
         <p>
             FRIDAY, NOVEMBER 1ST 08:00 PM
         </p>
@@ -47,6 +49,22 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 
 <style>
     h1 {
-        font-family: "Old Standard TT", serif;
+        color: #000;
+        font-family: "New Rocker";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
+    h2 {
+        color: #000;
+        text-align: center;
+        font-family: "Old Standard TT",serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    <p>
+
 </style>
