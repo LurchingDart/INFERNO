@@ -14,6 +14,12 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.0.17
         version: 5.1.0
+      '@fontsource/old-standard-tt':
+        specifier: ^5.1.0
+        version: 5.1.0
+      '@fontsource/unifrakturcook':
+        specifier: ^5.1.0
+        version: 5.1.0
       micromodal:
         specifier: ^0.4.10
         version: 0.4.10
@@ -374,6 +380,12 @@ packages:
 
   '@fontsource-variable/inter@5.1.0':
     resolution: {integrity: sha512-Wj2dUGP0vUpxRGQTXQTCNJO+aLcFcQm+gUPXfj/aS877bQkEPBPv9JvZJpwdm2vzelt8NTZ+ausKlBCJjh2XIg==}
+
+  '@fontsource/old-standard-tt@5.1.0':
+    resolution: {integrity: sha512-kSGTw6ve+rWSrjeR3Mr6TXvcOOVNNrOq7hctfPof6xGiK8WYtYHQBW1/phkknwKNSXE9hSqqk8E0fiAEXibqGA==}
+
+  '@fontsource/unifrakturcook@5.1.0':
+    resolution: {integrity: sha512-SiRdO1YeSxNFoMpXY18XWJSySEvxo2Z+T7gThGOGn4E0iBrkMVLxvlz98n0/LvsLcoRsEofxbf6TW99c2rJ/gA==}
 
   '@iconify-json/fa-brands@1.2.0':
     resolution: {integrity: sha512-063zve/7GEfzEnlDQycVQbcrx6MD206bmrnWLYaPFvLcPVioN8DGPbOBzpy3/zI2RQFe/T+ZuCB8XWi+AmBR9w==}
@@ -2817,6 +2829,10 @@ snapshots:
     optional: true
 
   '@fontsource-variable/inter@5.1.0': {}
+
+  '@fontsource/old-standard-tt@5.1.0': {}
+
+  '@fontsource/unifrakturcook@5.1.0': {}
 
   '@iconify-json/fa-brands@1.2.0':
     dependencies:
