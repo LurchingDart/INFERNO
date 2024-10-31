@@ -26,9 +26,6 @@ importers:
       '@fontsource/unifrakturcook':
         specifier: ^5.1.0
         version: 5.1.0
-      '@iconify-json/ri':
-        specifier: ^1.2.3
-        version: 1.2.3
       micromodal:
         specifier: ^0.4.10
         version: 0.4.10
@@ -54,6 +51,9 @@ importers:
       '@iconify-json/mdi':
         specifier: ^1.1.66
         version: 1.2.1
+      '@iconify-json/ri':
+        specifier: ^1.2.3
+        version: 1.2.3
       '@types/micromodal':
         specifier: ^0.3.5
         version: 0.3.5
