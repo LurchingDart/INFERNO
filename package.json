@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/vercel": "^7.8.2",
     "@fontsource-variable/grenze-gotisch": "^5.1.0",
     "@fontsource-variable/inter": "^5.0.17",
     "@fontsource/new-rocker": "^5.1.0",
