@@ -10,8 +10,7 @@ import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
-const description =
-  "INFERNO HALLOWEEN - Una fiesta de Halloween que no olvidarás (o sí, tampoco es proyecto x) pero hey, is Halloween Partyyyy!";
+const description = "This website was used before for something creepy and scary, but now it's more twisted";
 ---
 
 <!doctype html>
@@ -26,12 +25,20 @@ const description =
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="INFERNO" />
+    <meta property="og:title" content="INFERNO..." />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
     <meta property="og:url" content={site} />
+    <meta property="og:image" content={image} />
+    <meta property="og:description" content={description} />
+    <meta property="og_site_name" content="INFERNO" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="INFERNO...">
+    <meta property="twitter:description" content={description}>
+    <meta property="twitter:image" content={image}>
+    <meta name="twitter:image:alt" content="Creepy Skull" />
+
+
 
     <!-- initialize theme -->
     <script is:inline>
@@ -58,7 +65,7 @@ const description =
     </script>
   </head>
   <body
-    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-red-300"
   >
     <Splash />
     <Footer />

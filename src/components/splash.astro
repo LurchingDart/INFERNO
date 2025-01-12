@@ -1,67 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import catImage from "~/assets/cat.png";
-import BackgroundImage from "~/components/background-image.astro";
-import BackgroundMobileImage from "~/components/background-mobile-image.astro";
+import skullImage from "~/assets/skull.png";
 
 const widths = [1024, 1024];
 ---
 
-<section class="relative h-full">
-  <div class="absolute inset-0 overflow-hidden md:hidden">
-    <BackgroundMobileImage />
-  </div>
-  <div class="absolute inset-0 overflow-hidden hidden md:block">
-    <BackgroundImage />
-  </div>
-  <div class="relative flex flex-col h-full place-items-center py-32">
-    <h1 class="text-6xl">
-        INFERNO
-    </h1>
-    <h2 class="text-2xl">
-        HALLOWEEN
-    </h2>
-    <Image
-        class="w-5/12 md:w-1/5"
-        src={catImage}
-        widths={widths}
-        loading="eager"
-        alt="A demon cat"
-    />
+<section class="h-full">
+  <div
+    class="flex h-full flex-col place-items-center justify-center space-y-10"
+  >
     <div>
-        <h2 class="text-2xl">
-            FIESTA DE DISFRACES
-        </h2>
-        <div class="flex items-center border-black border-y-2">
-            <div class="w-1/3">
-                <p>
-                    FRI
-                </p>
-            </div>
-            <div class="w-1/3 border-black border-x-2">
-                <h3>
-                    01
-                </h3>
-            </div>
-            <div class="w-1/3">
-                <p>
-                    NOV
-                </p>
-            </div>
-        </div>
-        <h3>
-            20:00
-        </h3>
-        <p class="-mt-4">
-            <a href="https://maps.app.goo.gl/BNZebupxA3qqrRzFA">Ortiguilla 505, Camino Real</a>
-        </p>
-        <h4 class="mt-2">
-            COVER $20 - SHOT DE BIENVENIDA
-        </h4>
-        <h4>
-            CONCURSO DE DISFRACES POR UNA BOTELLA
-        </h4>
+      <h1 class="text-6xl">INFERNO</h1>
+      <p class="text-2xl">Something is coming...</p>
     </div>
+    <Image
+      class="w-5/12 md:w-1/5"
+      src={skullImage}
+      widths={widths}
+      loading="eager"
+      alt="A demon cat"
+    />
   </div>
 </section>
 
@@ -74,46 +32,20 @@ const widths = [1024, 1024];
 </noscript>
 
 <style>
-    h1 {
-        color: #000;
-        font-family: "New Rocker",cursive;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    h2 {
-        color: #000;
-        text-align: center;
-        font-family: "Old Standard TT",serif;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    h3 {
-        color: #000;
-        text-align: center;
-        font-family: UnifrakturCook,cursive;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    h4 {
-        color: #000;
-        text-align: center;
-        font-family: "Old Standard TT",serif;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    p {
-        color: #000;
-        text-align: center;
-        font-family: "Grenze Gotisch Variable",cursive;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+  h1 {
+    color: #fff;
+    font-family: "New Rocker", cursive;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: "Grenze Gotisch Variable", cursive;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 </style>
