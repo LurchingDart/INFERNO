@@ -3,34 +3,13 @@ import { Icon } from "astro-icon/components";
 import BackgroundImage from "~/components/background-footer-image.astro";
 ---
 
-<footer class="relative flex flex-col h-36 items-center justify-center">
+<footer class="relative flex flex-col h-20 items-center justify-center">
   <div class="absolute inset-0 overflow-hidden">
     <BackgroundImage />
   </div>
-  <div class="relative w-1/3">
-    <div class="flex justify-evenly ">
-      <a
-          class="flex size-16 items-center justify-center"
-          href="https://github.com/LurchingDart/INFERNO"
-      >
-        <span class="sr-only">View source on GitHub</span>
-        <Icon class="size-2/4" name="mdi:github" />
-      </a>
-      <a
-          class="flex size-16 items-center justify-center"
-          href="https://instagram.com/alfxrxz"
-      >
-        <span class="sr-only">
-          Reach me on Instagram
-        </span>
-        <Icon class="size-2/4" name="mdi:instagram" />
-      </a>
-    </div>
-
-  </div>
   <div class="relative w-full">
     <p class="text-center text-black text-lg">
-      Designed by <a href="https://github.com/LurchingDart" class="text-[#863B87]">★ Luis Alferez ★</a>
+      <a href="https://github.com/LurchingDart" class="text-[#863B87]">★ Luis Alferez ★</a>
     </p>
   </div>
 </footer>
