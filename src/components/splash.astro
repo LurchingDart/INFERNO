@@ -1,25 +1,31 @@
 ---
 import { Image } from "astro:assets";
 import skullImage from "~/assets/skull.png";
+import EyesXEyes from "../assets/eyes.png";
 
 const widths = [1024, 1024];
 ---
 
-<section class="h-full">
-  <div
-    class="flex h-full flex-col place-items-center justify-center space-y-10"
-  >
-    <div>
-      <h1 class="text-6xl">INFERNO</h1>
-      <p class="text-2xl">Something is coming...</p>
-    </div>
-    <Image
-      class="w-5/12 md:w-1/5"
-      src={skullImage}
+<section class="relative flex flex-col h-full items-center justify-center">
+  <Image
+      class="absolute inset-0 -z-10 opacity-80 object-cover h-full w-screen max-w-[3840px] "
+      src={EyesXEyes}
       widths={widths}
       loading="eager"
-      alt="A demon cat"
-    />
+      alt="Background image"
+  />
+  <div
+      class="flex h-full flex-col place-items-center justify-between space-y-10"
+  >
+    <div></div>
+    <div>
+      <h1 class="text-8xl">INFERNO</h1>
+      <p class="text-4xl">Something is coming...</p>
+      <p class="text-4xl">25 . 04 . 25</p>
+    </div>
+    <div class="">
+      <p class="text-4xl">Mas info pronto</p>
+    </div>
   </div>
 </section>
 
@@ -33,19 +39,19 @@ const widths = [1024, 1024];
 
 <style>
   h1 {
-    color: #fff;
+    color: #B53146;
     font-family: "New Rocker", cursive;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
   }
   p {
-    color: #fff;
+    color: #B53146;
     text-align: center;
     font-family: "Grenze Gotisch Variable", cursive;
     font-size: 32px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
   }
 </style>
