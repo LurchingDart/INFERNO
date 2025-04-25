@@ -1,4 +1,11 @@
-/* TODO: consider creating <Button> and <GradientText> components */
+@font-face {
+  font-family: 'SpaceArmor';
+  src: url('/fonts/SpaceArmor.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 a,
 .btn {
   @apply transition-colors duration-200;
