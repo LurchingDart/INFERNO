@@ -13,9 +13,6 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.2",
-    "@iconify-json/fa-brands": "^1.2.0",
-    "@iconify-json/mdi": "^1.2.1",
-    "@iconify-json/ri": "^1.2.3",
     "@types/micromodal": "^0.3.5",
     "astro": "^4.16.7",
     "astro-icon": "^1.1.1",
@@ -28,11 +25,6 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/netlify": "^6.6.3",
-    "@fontsource-variable/grenze-gotisch": "^5.1.0",
-    "@fontsource-variable/inter": "^5.1.0",
-    "@fontsource/new-rocker": "^5.1.0",
-    "@fontsource/old-standard-tt": "^5.1.0",
-    "@fontsource/unifrakturcook": "^5.1.0",
     "micromodal": "^0.4.10",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.14",
