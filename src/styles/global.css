@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'SpaceArmor';
-  src: url('/fonts/SpaceArmor.otf') format('opentype');
+  font-family: 'BootzyTM';
+  src: url('/fonts/BootzyTM.woff2') format('woff2'), url('/fonts/BootzyTM.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

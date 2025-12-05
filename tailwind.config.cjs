@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+        display: ["BootzyTM", "cursive"],
       },
       fontSize: {
         sm: '0.8rem',
