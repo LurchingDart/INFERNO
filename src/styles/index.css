@@ -1,2 +1,27 @@
-@import "global.css";
-@import "theme.css";
+@font-face {
+  font-family: 'BootzyTM';
+  src: url('/fonts/BootzyTM.woff2') format('woff2'), url('/fonts/BootzyTM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzy TM';
+    src: url('/fonts/MazzyTM-Regular.woff2') format('woff2'), url('/fonts/MazzyTM-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+[data-theme="dark"] {
+  --color-primary: #DA0004;
+  --color-secondary: #AA1919s;
+  --color-text: #EAEAEA;
+  --color-text-offset: #B0B0B0;
+  --color-background: #000000;
+  --color-background-offset: #1A1A1A;
+  --color-border: #1A1A1A;
+}
