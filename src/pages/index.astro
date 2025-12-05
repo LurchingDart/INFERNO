@@ -1,21 +1,25 @@
 ---
 import "@fontsource/old-standard-tt";
-import '@fontsource/unifrakturcook';
-import '@fontsource/new-rocker';
-import '@fontsource-variable/grenze-gotisch';
+import "@fontsource/unifrakturcook";
+import "@fontsource/new-rocker";
+import "@fontsource-variable/grenze-gotisch";
 import Footer from "~/components/footer.astro";
 import Splash from "~/components/splash.astro";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
-const description = "This website was used before for something creepy and scary, but now it's more twisted";
+const description =
+  "This website was used before for something creepy and scary, but now it's more twisted";
 ---
 
 <!doctype html>
-<html lang="en" class="h-full motion-safe:scroll-smooth bg-black" data-theme="dark">
+<html
+  lang="en"
+  class="h-full bg-black motion-safe:scroll-smooth"
+  data-theme="dark"
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -34,17 +38,15 @@ const description = "This website was used before for something creepy and scary
     <meta property="og_site_name" content="INFERNO" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="INFERNO...">
-    <meta property="twitter:description" content={description}>
-    <meta property="twitter:image" content={image}>
+    <meta property="twitter:title" content="INFERNO..." />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
     <meta name="twitter:image:alt" content="Creepy Skull" />
-
   </head>
   <body
     class="h-full overflow-x-hidden text-default text-base selection:bg-secondary selection:text-red-300"
   >
     <Splash />
     <Footer />
-    <SpeedInsights/>
   </body>
 </html>
