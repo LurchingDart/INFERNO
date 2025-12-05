@@ -1,15 +1,15 @@
 ---
-import BackgroundImage from "~/components/background-footer-image.astro";
+import backgroundImage from "@/wall-03.png";
 ---
 
 <footer class="relative flex h-20 flex-col items-center justify-center">
   <div class="absolute inset-0 overflow-hidden">
-    <BackgroundImage />
+    <img class="h-full w-full object-cover" src={backgroundImage.src} alt="2SYNTH - Background" />
   </div>
   <div class="relative w-full">
     <p class="text-center text-black text-lg">
       <a href="https://instagram.com/alfxrxz" class="text-[#863B87]">
-        Alfxrxz ★
+        ★ ALFXRXZ ★
       </a>
     </p>
   </div>
@@ -17,6 +17,6 @@ import BackgroundImage from "~/components/background-footer-image.astro";
 
 <style>
   p {
-    font-family: UnifrakturCook;
+    font-family: Mazzy TM;
   }
 </style>

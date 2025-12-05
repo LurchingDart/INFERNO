@@ -1,15 +1,13 @@
 ---
-import { Image } from "astro:assets";
-import EyesXEyes from "../assets/eyes.png";
-
-const widths = [1024, 1024];
+import EyesXEyes from "@/eyes.png";
 ---
 
 <section class="relative flex min-h-svh">
-  <Image
+  <img
     class="absolute inset-0 -z-10 h-full w-screen max-w-[3840px] object-cover opacity-60"
-    src={EyesXEyes}
-    widths={widths}
+    src={EyesXEyes.src}
+    width={EyesXEyes.width}
+    height={EyesXEyes.height}
     loading="eager"
     alt="Background image"
   />
