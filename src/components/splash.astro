@@ -1,21 +1,20 @@
 ---
 import { Image } from "astro:assets";
-import wall2 from "~/assets/wall-02.png";
 import EyesXEyes from "../assets/eyes.png";
 
 const widths = [1024, 1024];
 ---
 
-<section class="relative flex flex-col h-full items-center justify-center">
+<section class="relative flex h-full flex-col items-center justify-center">
   <Image
-      class="absolute inset-0 -z-10 opacity-60 object-cover h-full w-screen max-w-[3840px] "
-      src={EyesXEyes}
-      widths={widths}
-      loading="eager"
-      alt="Background image"
+    class="absolute inset-0 -z-10 h-full w-screen max-w-[3840px] object-cover opacity-60"
+    src={EyesXEyes}
+    widths={widths}
+    loading="eager"
+    alt="Background image"
   />
   <div
-      class="flex h-full flex-col place-items-center justify-between space-y-10 text-center text-xl"
+    class="flex h-full flex-col place-items-center justify-between space-y-10 text-center text-xl"
   >
     <div></div>
     <div class="flex flex-col gap-4">
@@ -39,25 +38,31 @@ const widths = [1024, 1024];
     </div>
   </div>
 </section>
-<section class="h-fit flex flex-col gap-6 p-6">
+<section class="flex h-fit flex-col gap-6 p-6">
   <div>
-      <h1 class="text-2xl">
-        COVER:<br/><br/>
-      </h1>
-      <span>
-        $30 = Shot de bienvenida + agua loca hasta que se acabe + refrescos + botanas <br/><br/>
-        $70 = Todo lo anterior + 1 brownie mágico 🍃 y acceso al borrego y la maría 🍁
+    <h1 class="text-2xl">
+      COVER:<br /><br />
+    </h1>
+    <span>
+      $30 = Shot de bienvenida + agua loca hasta que se acabe + refrescos +
+      botanas <br /><br />
+      $70 = Todo lo anterior + 1 brownie mágico 🍃 y acceso al borrego y la maría
+      🍁
     </span>
   </div>
   <div>
     <h1 class="text-2xl">
-      EXTRAS:<br/><br/>
+      EXTRAS:<br /><br />
     </h1>
     <span>
-      / El pisto que quieras mamar te lo traes tú. <br/><br/>
-      / Conectamos Tripi 👁 pregunta si te interesa. <br/><br/>
-      / Si quieres más brownie o algo de mostaza, pregunta. <br/><br/>
-      / Llevar lentes bellakos como estos: <a href="https://inferno.wtf/lentes.png" class="underline">click me</a> <br/><br/>
+      / El pisto que quieras mamar te lo traes tú. <br /><br />
+      / Conectamos Tripi 👁 pregunta si te interesa. <br /><br />
+      / Si quieres más brownie o algo de mostaza, pregunta. <br /><br />
+      / Llevar lentes bellakos como estos: <a
+        href="https://inferno.wtf/lentes.png"
+        class="underline">click me</a
+      >
+      <br /><br />
     </span>
   </div>
 </section>
@@ -72,16 +77,15 @@ const widths = [1024, 1024];
 
 <style>
   h1 {
-    color: #B53146;
+    color: #b53146;
     font-family: "SpaceArmor", cursive;
-
   }
   p {
-    color: #D12F31;
+    color: #d12f31;
     font-family: "SpaceArmor", cursive;
   }
   span {
-    color: #D12F31;
+    color: #d12f31;
     font-family: "New Rocker", cursive;
   }
 </style>
